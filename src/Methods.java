@@ -1,11 +1,3 @@
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Methods {
     public static char[] coding (String text, int key) {
         char[] alphabet = {'à', 'á', 'â', 'ã', 'ä', 'å', '¸', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '.', ',', '"', ':', '-', '!', '?', ' '};
@@ -37,7 +29,7 @@ public class Methods {
         return codedText;
     }
 
-    public static char[] uncoding (String text, int key){
+    public static char[] decoding(String text, int key){
         char[] alphabet = {'à', 'á', 'â', 'ã', 'ä', 'å', '¸', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '.', ',', '"', ':', '-', '!', '?', ' '};
         char[] arrayText = text.toLowerCase().toCharArray();
         char[] codedText = new char[arrayText.length];
