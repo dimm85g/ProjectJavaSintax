@@ -2,7 +2,7 @@ public class Methods {
     public static char[] coding (String text, int key) {
         char[] alphabet = {'à', 'á', 'â', 'ã', 'ä', 'å', '¸', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '.', ',', '"', ':', '-', '!', '?', ' '};
         char[] arrayText = text.toLowerCase().toCharArray();
-        char[] codedText = new char[arrayText.length];
+        char[] codedText = new char[text.length()];
         int index = 0;
         for (int i = 0; i < text.length(); i++) {
             char symbol = arrayText[i];
@@ -58,4 +58,6 @@ public class Methods {
         }
         return codedText;
     }
+
+
 }
