@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/decodedText.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="the first part is ready">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectJavaSintax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectJavaSyntax.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decodedText.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/encodedText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/encodedText.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/text.txt" afterDir="false" />
     </list>
@@ -23,6 +25,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2JcNzipfEucqNWdLMVeM2EJfdkk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,18 +48,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ProjectJavaSintax" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
+      <module name="ProjectJavaSyntax" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,6 +68,18 @@
       <option name="presentableId" value="Default" />
       <updated>1672373679019</updated>
     </task>
+    <task id="LOCAL-00001" summary="the first part is ready">
+      <created>1673715291551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673715291551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the first part is ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="the first part is ready" />
   </component>
 </project>

@@ -28,7 +28,6 @@ public class Methods {
         }
         return codedText;
     }
-
     public static char[] decoding(String text, int key){
         char[] alphabet = {'а', 'б', 'в', 'г', 'д', 'е', 'Є', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', '€', '.', ',', '"', ':', '-', '!', '?', ' '};
         char[] arrayText = text.toLowerCase().toCharArray();
@@ -58,6 +57,21 @@ public class Methods {
         }
         return codedText;
     }
-
-
+    public static char[] brutForce (String text){
+        char[] array = new char[text.length()];
+        for (int i = 1; i < 40; i++){
+            array = Methods.coding(text, i);
+            int numberOfElements = array.length;
+            int ratio = 17;//  ¬ среднем в русском €зыке встречаетс€ 174 пробела на 1000 символов.
+            int numberOfSpace = 0;
+            for (int k = 0; k < array.length; k++){ // считаем количество пробелов в нашем тексте
+                if (array[k] == ' '){
+                    numberOfSpace++;
+                }
+            }
+            int numberOfSpaceRatio = numberOfSpace * 100 / numberOfElements; // считаем процент содержани€ пробелов в нашем тексте
+            if (numberOfSpaceRatio < (ratio + 2) && numberOfSpaceRatio > (ratio - 4)) break;
+        }
+        return array;
+    }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjectJavaSintax.iml" filepath="$PROJECT_DIR$/ProjectJavaSintax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjectJavaSyntax.iml" filepath="$PROJECT_DIR$/ProjectJavaSyntax.iml" />
     </modules>
   </component>
 </project>
