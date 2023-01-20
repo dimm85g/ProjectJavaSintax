@@ -17,21 +17,11 @@ public class Streams {
         }
         return str;
     }
-    public void writeStream(String filePathOut, String text, int key) throws IOException {
+    public void writeStream(String filePathOut, String text, int key, int modifier) throws IOException {
         try (FileChannel outputChannel = FileChannel.open(Path.of(filePathOut), StandardOpenOption.READ, StandardOpenOption.WRITE)) {
             ByteBuffer buf;
             Methods method = new Methods();
-            char[] codedText = method.coding(text, key);
-            String codedTextStr = String.valueOf(codedText);
-            buf = ByteBuffer.wrap(codedTextStr.getBytes());
-            outputChannel.write(buf);
-        }
-    }
-    public void writeStreamDecoding(String filePathOut, String text, int key) throws IOException {
-        try (FileChannel outputChannel = FileChannel.open(Path.of(filePathOut), StandardOpenOption.READ, StandardOpenOption.WRITE)) {
-            ByteBuffer buf;
-            Methods method = new Methods();
-            char[] codedText = method.decoding(text, key);
+            char[] codedText = method.coding(text, key, modifier);
             String codedTextStr = String.valueOf(codedText);
             buf = ByteBuffer.wrap(codedTextStr.getBytes());
             outputChannel.write(buf);

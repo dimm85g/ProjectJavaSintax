@@ -14,11 +14,13 @@ public class Menu {
         String text = stream.readStream(filePath);
 
         if (choiceMethod == 1) {
-            stream.writeStream(filePathOut, text,key);
+            int modifier = Constants.MODIFIER_CODING;
+            stream.writeStream(filePathOut, text,key, modifier);
             System.out.println("Текст закодирован!");
         }
         else if (choiceMethod == 2){
-            stream.writeStreamDecoding(filePathOut, text, key);
+            int modifier = Constants.MODIFIER_DECODING;
+            stream.writeStream(filePathOut, text, key, modifier);
             System.out.println("Текст раскодирован!");
         }
     }

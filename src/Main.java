@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Если нужно зашифровать текст, введите идиентификатор - 1" +
-                " \nЕсли нужно расшифровать текст с попщью ключа, введите идиентификатор - 2" +
-                " \nЕсли нужно расшифровать текст с помощью метода brute force, введите идиентификатор - 3");
+                "\nЕсли нужно расшифровать текст с попщью ключа, введите идиентификатор - 2" +
+                "\nЕсли нужно расшифровать текст с помощью метода brute force, введите идиентификатор - 3");
 
         Scanner scannerKey = new Scanner(System.in);
         int choiceMethod = scannerKey.nextInt();
