@@ -1,5 +1,5 @@
 public class Methods {
-    public static char[] coding (String text, int key) {
+    public char[] coding (String text, int key) {
         char[] alphabet = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', '.', ',', '"', ':', '-', '!', '?', ' '};
         char[] arrayText = text.toLowerCase().toCharArray();
         char[] codedText = new char[text.length()];
@@ -28,7 +28,7 @@ public class Methods {
         }
         return codedText;
     }
-    public static char[] decoding(String text, int key){
+    public char[] decoding(String text, int key){
         char[] alphabet = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', '.', ',', '"', ':', '-', '!', '?', ' '};
         char[] arrayText = text.toLowerCase().toCharArray();
         char[] codedText = new char[arrayText.length];
@@ -57,19 +57,20 @@ public class Methods {
         }
         return codedText;
     }
-    public static char[] brutForce (String text){
+    public char[] brutForce (String text){
         char[] array = new char[text.length()];
         for (int i = 1; i < 40; i++){
-            array = Methods.coding(text, i);
+            Methods method = new Methods();
+            array = method.coding(text, i);
             int numberOfElements = array.length;
-            int ratio = 17;//  В среднем в русском языке встречается 174 пробела на 1000 символов.
+            int ratio = 17;//  On average, there are 174 spaces per 1000 characters in the Russian language.
             int numberOfSpace = 0;
-            for (int k = 0; k < array.length; k++){ // считаем количество пробелов в нашем тексте
+            for (int k = 0; k < array.length; k++){ // counting the number of spaces in our text
                 if (array[k] == ' '){
                     numberOfSpace++;
                 }
             }
-            int numberOfSpaceRatio = numberOfSpace * 100 / numberOfElements; // считаем процент содержания пробелов в нашем тексте
+            int numberOfSpaceRatio = numberOfSpace * 100 / numberOfElements; // we count the percentage of the content of spaces in our text
             if (numberOfSpaceRatio < (ratio + 2) && numberOfSpaceRatio > (ratio - 4)) break;
         }
         return array;

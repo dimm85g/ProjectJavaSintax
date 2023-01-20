@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 public class Streams {
-    public static String readStream(String filePathIn) throws IOException {
+    public String readStream(String filePathIn) throws IOException {
         String str = null;
         try (FileChannel inputChannel = FileChannel.open(Path.of(filePathIn))) {
             ByteBuffer buf = ByteBuffer.allocate((int) inputChannel.size());
@@ -17,37 +17,37 @@ public class Streams {
         }
         return str;
     }
-
-    public static void writeStream(String filePathOut, String text, int key) throws IOException {
+    public void writeStream(String filePathOut, String text, int key) throws IOException {
         try (FileChannel outputChannel = FileChannel.open(Path.of(filePathOut), StandardOpenOption.READ, StandardOpenOption.WRITE)) {
             ByteBuffer buf;
-            char[] codedText = Methods.coding(text, key);
+            Methods method = new Methods();
+            char[] codedText = method.coding(text, key);
             String codedTextStr = String.valueOf(codedText);
             buf = ByteBuffer.wrap(codedTextStr.getBytes());
             outputChannel.write(buf);
         }
     }
-
-    public static void writeStreamDecoding(String filePathOut, String text, int key) throws IOException {
+    public void writeStreamDecoding(String filePathOut, String text, int key) throws IOException {
         try (FileChannel outputChannel = FileChannel.open(Path.of(filePathOut), StandardOpenOption.READ, StandardOpenOption.WRITE)) {
             ByteBuffer buf;
-            char[] codedText = Methods.decoding(text, key);
+            Methods method = new Methods();
+            char[] codedText = method.decoding(text, key);
             String codedTextStr = String.valueOf(codedText);
             buf = ByteBuffer.wrap(codedTextStr.getBytes());
             outputChannel.write(buf);
         }
     }
-
-    public static void writeStreamDecodingBF(String filePathOut, String text) throws IOException {
+    public void writeStreamDecodingBF(String filePathOut, String text) throws IOException {
         try (FileChannel outputChannel = FileChannel.open(Path.of(filePathOut), StandardOpenOption.READ, StandardOpenOption.WRITE)) {
             ByteBuffer buf;
-            char[] codedText = Methods.brutForce(text);
+            Methods method = new Methods();
+            char[] codedText = method.brutForce(text);
             String codedTextStr = String.valueOf(codedText);
             buf = ByteBuffer.wrap(codedTextStr.getBytes());
             outputChannel.write(buf);
         }
     }
-    public static void createDecodedTextFile (String filePathOut) throws IOException{
+    public void createDecodedTextFile (String filePathOut) throws IOException{
         Path path = Path.of(filePathOut);
         if (!Files.exists(path)){
             Files.createFile(path);
