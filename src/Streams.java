@@ -37,7 +37,7 @@ public class Streams {
             outputChannel.write(buf);
         }
     }
-    public void createDecodedTextFile (String filePathOut) throws IOException{
+    public void createTextFile (String filePathOut) throws IOException{
         Path path = Path.of(filePathOut);
         if (!Files.exists(path)){
             Files.createFile(path);

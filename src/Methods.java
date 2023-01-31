@@ -1,7 +1,5 @@
 public class Methods {
-
     final char[] alphabet = Constants.ALPHABET;
-
     public char[] coding (String text, int key, int modifier) {
         char[] arrayText = text.toLowerCase().toCharArray();
         char[] codedText = new char[text.length()];

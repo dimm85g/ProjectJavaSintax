@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="Converted static methods into non-static methods">
-      <change afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
+    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="The Menu class is ready.">
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encodedText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/encodedText.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/test_class_Menu" />
+                        <option value="test_class_Menu" />
                       </list>
                     </value>
                   </entry>

@@ -7,25 +7,22 @@ public class Main {
     // C:\Java\ProjectJavaSintax\src\encodedText.txt
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Если нужно зашифровать текст, введите идиентификатор - 1" +
-                "\nЕсли нужно расшифровать текст с попщью ключа, введите идиентификатор - 2" +
-                "\nЕсли нужно расшифровать текст с помощью метода brute force, введите идиентификатор - 3");
+        System.out.println(Constants.MENU_TITLE);
 
         Scanner scannerKey = new Scanner(System.in);
         int choiceMethod = scannerKey.nextInt();
 
+        Menu menu = new Menu();
+
         if (choiceMethod == 1) {   //метод для кодирования
-            Menu menu = new Menu();
-            String filePathOutEncoded = "C:\\Users\\Dima\\IdeaProjects\\ProjectJavaSintax\\src\\encodedText.txt";
+            String filePathOutEncoded = "C:\\Java\\ProjectJavaSintax\\src\\encodedText.txt";
             menu.getMenu(choiceMethod, filePathOutEncoded);
         }
         else if (choiceMethod == 2) {
-            Menu menu = new Menu();
-            String filePathOutDecoded = "C:\\Users\\Dima\\IdeaProjects\\ProjectJavaSintax\\src\\decodedText.txt";
+            String filePathOutDecoded = "C:\\Java\\ProjectJavaSintax\\src\\decodedText.txt";
             menu.getMenu(choiceMethod, filePathOutDecoded);
         }
         else if (choiceMethod == 3){
-            Menu menu = new Menu();
             menu.getMenuBF();
         }
         else {
