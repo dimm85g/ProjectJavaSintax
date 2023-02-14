@@ -1,3 +1,5 @@
+package Prog;
+
 public class Methods {
     final char[] alphabet = Constants.ALPHABET;
     public char[] coding (String text, int key, int modifier) {

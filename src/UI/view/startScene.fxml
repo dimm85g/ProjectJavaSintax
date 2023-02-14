@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="360.0" prefWidth="600.0" style="-fx-background-color: #FFC473;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.Controller">
+    <children>
+        <AnchorPane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #66A1D2;">
+            <children>
+                <Label alignment="CENTER" layoutX="181.0" layoutY="16.0" text="Caesar 's Cipher" textFill="#59360c">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="encryptionButton" layoutX="60.0" layoutY="120.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="220.0" text="Шифрование с помощью ключа" textFill="#0b5fa5">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="decodingButton" layoutX="320.0" layoutY="120.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="220.0" text="Расшифровка с помощью ключа" textFill="#0b5fa5">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="bruteForceButton" layoutX="60.0" layoutY="231.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="220.0" text="Расшифровка методом BrutForce" textFill="#0b5fa5">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="statisticalAnalysisButton" layoutX="320.0" layoutY="231.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="220.0" text="Расшифровка методом статистического анализа" textFill="#0b5fa5">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
