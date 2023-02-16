@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="add title menu and other minor edits.">
-      <change afterPath="$PROJECT_DIR$/src/Prog/encodedText.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Controllers/StatisticalAnalysisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/view/bruteForceScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/view/decodingScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/view/encodingScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/view/startScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/view/statisticalAnalysisScene.fxml" afterDir="false" />
+    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="Implementation of the interface for key encoding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectJavaSyntax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectJavaSyntax.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Streams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encodedText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/view/bruteForceScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/bruteForceScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/view/decodingScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/decodingScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/view/encodingScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/encodingScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +56,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Java/ProjectJavaSintax/src/Prog",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java/ProjectJavaSintax/src/Prog&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Java\ProjectJavaSintax\src\Prog" />
@@ -168,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675140709741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementation of the interface for key encoding">
+      <created>1676352924917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676352924917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +243,8 @@
     <MESSAGE value="The Menu class is ready." />
     <MESSAGE value="Converted static methods into non-static methods" />
     <MESSAGE value="add title menu and other minor edits." />
-    <option name="LAST_COMMIT_MESSAGE" value="add title menu and other minor edits." />
+    <MESSAGE value="Implementation of the interface for key encoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of the interface for key encoding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

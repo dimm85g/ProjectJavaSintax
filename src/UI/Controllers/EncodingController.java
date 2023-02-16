@@ -64,9 +64,8 @@ public class EncodingController extends Constants {
                     throw new RuntimeException(e);
                 }
 
-                int modifier = Constants.MODIFIER_CODING;
                 try {
-                    stream.writeStream(filePathOut, text, Integer.parseInt(key), modifier);
+                    stream.writeStream(filePathOut, text, Integer.parseInt(key), Constants.MODIFIER_CODING);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

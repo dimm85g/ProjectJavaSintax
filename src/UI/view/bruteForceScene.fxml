@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -8,12 +12,34 @@
     <children>
         <AnchorPane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #66A1D2;">
             <children>
-                <Label alignment="CENTER" layoutX="25.0" layoutY="16.0" text="Расшифровка методом Brute Force" textFill="#59360c">
+                <Label alignment="CENTER" layoutX="50.0" layoutY="16.0" text="Расшифровка с помощью ключа" textFill="#59360c">
                     <font>
                         <Font name="Century Gothic" size="30.0" />
                     </font>
                 </Label>
             </children>
         </AnchorPane>
+        <TextField fx:id="decodedKeyField" layoutX="225.0" layoutY="155.0" prefHeight="25.0" prefWidth="150.0" promptText="Введите ключ" />
+        <Button fx:id="decodedStartButton" layoutX="257.0" layoutY="273.0" mnemonicParsing="false" text="Start" textFill="#0b5fa5">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="FileChooserIn" layoutX="56.0" layoutY="86.0" mnemonicParsing="false" onAction="#fileChooserIn" prefHeight="38.0" prefWidth="317.0" text="Выберите файл с зашифрованным текстом" textFill="#0b5fa5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="FileChooserOut" layoutX="56.0" layoutY="213.0" mnemonicParsing="false" onAction="#fileChooserOut" prefHeight="38.0" prefWidth="317.0" text="Выберите файл для расшифрованного текста" textFill="#0b5fa5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="65.0" layoutY="155.0" prefHeight="25.0" prefWidth="150.0" text="Введите ключ -&gt;" />
+        <ImageView fitHeight="136.0" fitWidth="200.0" layoutX="386.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/enigma-voennaya-nemeckaya.jpg" />
+            </image>
+        </ImageView>
     </children>
 </AnchorPane>
