@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import Prog.Constants;
 import Prog.Streams;
 import javafx.fxml.FXML;
@@ -38,7 +37,7 @@ public class DecodingController {
     @FXML
     void initialize() {
 
-        decodedStartButton.setOnAction(event -> {
+        decodedStartButton.setOnAction(event -> { decodedStartButton.getScene().getWindow().hide();
 
             String key = decodedKeyField.getText().trim(); // создаем строку с ключом
 

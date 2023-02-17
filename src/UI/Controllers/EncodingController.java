@@ -1,12 +1,9 @@
 package UI.Controllers;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import com.sun.glass.ui.CommonDialogs;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -43,7 +40,7 @@ public class EncodingController extends Constants {
     @FXML
     void initialize() {
 
-        encodedStartButton.setOnAction(event -> {
+        encodedStartButton.setOnAction(event -> {encodedStartButton.getScene().getWindow().hide();
             //String filePath = addFilePathField.getText().trim(); // создаем строку из поля, где вводится пусть к файлу с текстом
 
             String key = encodedKeyField.getText().trim(); // создаем строку с ключом

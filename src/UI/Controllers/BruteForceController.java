@@ -4,14 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import Prog.Constants;
 import Prog.Streams;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.FileChooser;
@@ -36,9 +29,10 @@ public class BruteForceController {
     @FXML
     private Button decodedStartButton;
 
+    @FXML
     void initialize() {
 
-        decodedStartButton.setOnAction(event -> {
+        decodedStartButton.setOnAction(event -> {decodedStartButton.getScene().getWindow().hide();
 
             if(!filePathIn.equals("") && !filePathOut.equals("")){ // проверяем, чтобы поля не были пустыми
 
@@ -57,11 +51,10 @@ public class BruteForceController {
                 }
 
                 try {
-                    stream.writeStreamDecodingBF(filePathIn, text);
+                    stream.writeStreamDecodingBF(filePathOut, text);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-                //метод
             }
             else System.out.println("Error");
         });

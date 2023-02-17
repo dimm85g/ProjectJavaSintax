@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="added implementation of decryption by key and BruteForce method" />
+    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="added implementation of decryption by key and BruteForce method">
+      <change afterPath="$PROJECT_DIR$/src/files_for_testing/encodedText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/decodedText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files_for_testing/decodedText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/encodedText.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prog/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files_for_testing/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/StatisticalAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/StatisticalAnalysisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/view/statisticalAnalysisScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/statisticalAnalysisScene.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,19 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/ProjectJavaSintax/src/Prog&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Java/ProjectJavaSintax/src/files_for_testing",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.rainbow.brackets"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Java\ProjectJavaSintax\src\files_for_testing" />
       <recent name="C:\Java\ProjectJavaSintax\src\Prog" />
       <recent name="C:\Java\ProjectJavaSintax\src\UI\view" />
       <recent name="C:\Java\ProjectJavaSintax\src\view" />
@@ -160,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676523388148</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added implementation of decryption by key and BruteForce method">
+      <created>1676640217927</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676640217927</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
