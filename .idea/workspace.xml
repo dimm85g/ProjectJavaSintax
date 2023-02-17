@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="Implementation of the interface for key encoding">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prog/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prog/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/BruteForceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/DecodingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Controllers/EncodingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/view/bruteForceScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/bruteForceScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/view/decodingScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/decodingScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/view/encodingScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/view/encodingScene.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="434f186e-258c-43cd-afa3-804fac82a2de" name="Changes" comment="added implementation of decryption by key and BruteForce method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676352924917</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added implementation of decryption by key and BruteForce method">
+      <created>1676523388148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676523388148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +242,8 @@
     <MESSAGE value="Converted static methods into non-static methods" />
     <MESSAGE value="add title menu and other minor edits." />
     <MESSAGE value="Implementation of the interface for key encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of the interface for key encoding" />
+    <MESSAGE value="added implementation of decryption by key and BruteForce method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added implementation of decryption by key and BruteForce method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
